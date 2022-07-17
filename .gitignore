@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# local
+data/
+Untitled-1.sh
+houjinLODLite_20220630.ttl
+houjinLODLite_20220630.ttl.tgz
