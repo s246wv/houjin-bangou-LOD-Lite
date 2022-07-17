@@ -1,0 +1,1 @@
+# houjin-bangou-LOD-Lite
