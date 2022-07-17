@@ -5,13 +5,13 @@ from rdflib.namespace import XSD
 import sys
 
 args = sys.argv
-filename = args[1]
-# filename = "00_zenkoku_all_20220630_000.csv" ##ここを変えてね．
+# filename = args[1]
+filename = "00_zenkoku_all_20220630.csv" ##ここを変えてね．
 df=pd.read_csv(filename, sep=",",quotechar='"', dtype=str) ##コンマ区切り，クオータはダブルクオーテーションを想定．
 
 ## グラフ作ります．
 g = Graph()
-houjin = Namespace('https://github.com/s246wv/MLIT_bidding_info/houjin-bangou/')
+houjin = Namespace('https://purl.org/houjin-bangou-lod-lite/')
 
 for index, row in df.iterrows():
     keys = row.keys()
